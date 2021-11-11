@@ -1,0 +1,285 @@
+body{
+    text-align:center;
+    transition-property: all;
+    transition-duration: 5s;
+    opacity: 0;
+}
+body:hover {
+    opacity: 1;
+    background-color: pink;
+    
+}
+.container{
+    display:grid;
+    margin: 0 auto;
+    width:95%;
+    padding-top: 10px;
+    background-color:;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows: minmax (250px,auto);
+    grid-template-areas: 
+        "edenStart edenStart . . edenLogo edenLogo . .  edenend edenend"
+        "hr hr hr hr hr hr hr hr hr hr"
+        "nav nav nav nav nav nav nav nav nav nav";
+}
+.container2{
+    display:grid;
+    grid-gap: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width:100%;
+    padding-top:10px;
+    background-color:;
+    grid-template-columns:43% 32% 20%;
+    grid-auto-rows: minmax (250px,500px);
+    grid-template-areas: 
+        "yakam dw se"
+        "yakam dw se"
+        "yakam dw for"
+        "yakam dw for";
+}
+.link a img{
+    width:25px;
+    height: 25px;
+    margin-left: 1px;
+    margin-top: 10px
+}
+.edenStart{
+    grid-area:edenStart;  
+}
+.edenLogo{
+    grid-area:edenLogo;   
+    padding-bottom: 25px;
+}
+.edenend{
+    grid-area:edenend;
+}
+.edenend i img{
+    width: 20px;
+}
+.edenend button{
+ font-weight: 600;
+}
+.hr{
+    grid-area: hr;
+    padding-bottom: 20px;
+    width: 100%;
+}
+/* NAV CSS STARTS HERE */
+.nav{
+    grid-area:nav;
+     margin-left: 12%;
+padding-bottom: 20px;
+}
+.nav-link{
+color:black;
+    transition-property: all;
+    transition-duration: 0.1s;
+    margin-left: 15px;
+}
+.active{
+    color:#FF8186;
+}
+.nav-link:hover{
+color:#FF8186;
+    
+}
+/*NAV CSS ENDS HERE */
+.First{
+    grid-area:yakam;
+    display: inline-block;
+    overflow: hidden;
+      position: relative;
+
+}
+.First img{
+width:100%;
+            
+    transition-property: all;
+    transition-duration: 1s;
+         display: inline-block;
+
+
+}
+.First img:hover {
+  transform: scale(1.2); 
+}
+.Fadd{
+    width: 75%;
+    height: 30%;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+     right:0px;
+    bottom:20px
+    ;
+
+} 
+.Fadd p{
+    font-size: 15px;
+   font-family: 'Playfair Display', serif;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    color:#FF8186;
+}
+.second p{
+    font-size: 15px;
+    font-weight: 600;
+   font-family: arial;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 15px;
+    color:white;
+}
+.second a,p{
+    font-size: 23px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color:black;
+    text-decoration: none;  
+    transition-property: all;
+    transition-duration: 1s;
+    color:white;
+    
+}
+.Fadd a{
+    
+font-size: 23px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color:black;
+    text-decoration: none;  
+    transition-property: all;
+    transition-duration: 1s;
+}
+#a{
+font-size: 10px;
+
+}
+.Fadd a:hover{
+      color:#FF8186;
+}
+.second a:hover{
+      color:#FF4759;
+}
+.second p:hover{
+      color:#FF8186;
+}
+.third a:hover{
+      color:#FF4759;
+}
+.forth a:hover{
+      color:#FF4759;
+}
+#one{
+    font-size:10px;
+    color: black;
+      margin: 0;
+
+    
+}
+.second{
+    grid-area:dw;
+    position: relative;
+     display: inline-block;
+    overflow: hidden;
+ 
+}
+.second .Sadd{
+    position:absolute;
+    z-index: 10;
+   left:5%;
+    bottom:40%; 
+
+} 
+.second img{
+ transition-property: all;
+ transition-duration: 1s;
+         display: inline-block;
+
+}
+.third img{
+ transition-property: all;
+ transition-duration: 1s;
+         display: inline-block;
+
+}
+.forth img{
+ transition-property: all;
+ transition-duration: 1s;
+ display: inline-block;
+
+}
+.second img:hover {
+  transform: scale(1.2); 
+}
+.third img:hover {
+  transform: scale(1.2); 
+}
+.forth img:hover {
+  transform: scale(1.2); 
+}
+.third{
+    position: relative;
+     display: inline-block;
+    overflow: hidden;
+    grid-area:se;
+}
+.third .tadd{
+    background-color:white;
+    position:absolute;
+    z-index: 10;
+    left:15%;
+width: 240px;
+    height: 200px;
+    bottom:0; 
+    
+
+} 
+.forth .fadd{
+    background-color:white;
+    position:absolute;
+    z-index: 10;
+    left:15%;
+width: 240px;
+    height: 200px;
+    bottom:0; 
+    
+     
+
+} 
+.third p{
+      color:#FF8186;
+    margin-top: 15px;
+}
+.third a{
+   font-size: 23px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color:black;
+    text-decoration: none;  
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+.forth p{
+      color:#FF8186;
+    margin-top: 15px;
+}
+.forth a{
+   font-size: 23px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color:black;
+    text-decoration: none;  
+    transition-property: all;
+    transition-duration: 1s;
+    
+}
+.forth{
+      position: relative;
+     display: inline-block;
+    overflow: hidden;
+    grid-area:for;
+}
